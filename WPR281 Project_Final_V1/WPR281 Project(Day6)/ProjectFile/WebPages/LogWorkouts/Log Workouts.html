@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Athleticism</title>
+    <link rel="stylesheet" href="LogWorkouts.css">
+    <link rel="icon" type="image/png" href="Fav-true.png">
+    <script src="LogWorkouts.js"></script>
+    <script src="MockUser.js"></script>
+</head>
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="Home.html">
+                        <img src="Logo-true.png" width="100px" >
+                     </a>
+                </div>
+                <nav>
+                    <a href="../Home.html">Home</a>
+                    <a href="Log Workouts.html">Log Workouts</a>
+                    <a href="../Statistics.html">Workout Statistics</a>
+                    <a href="../Goals.html">View Goals</a>
+                    <a href="../Achievements.html">Achievements</a>
+                    <a href="../login/Login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+        <div class="banner-area">
+            <h2>Log Your Workout</h2>
+        </div>
+        <div class="content-area">
+            <div class="wrapper">
+                <h2>Log your workout here</h2>
+                <!-- Form for the users input -->
+                <form id="workoutForm">
+                    <ul class="input-list">
+                        <li>
+                            <label for="workoutType">Workout Type:</label>
+                            <select id="workoutType" name="workoutType" required>
+                                <option value="">Select a workout</option>
+                                <option value="Running">Running</option>
+                                <option value="Cycling">Cycling</option>
+                                <option value="Swimming">Swimming</option>
+                                <option value="Weight Training">Weight Training</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="HIIT">HIIT</option>
+                                <option value="Boxing">Boxing</option>
+                                <option value="Pilates">Pilates</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="duration">Duration (minutes):</label>
+                            <input type="number" id="duration" name="duration" required>
+                        </li>
+                        <li>
+                            <label for="calories">Calories Burned:</label>
+                            <input type="number" id="calories" name="calories" required>
+                        </li>
+                        <li>
+                            <label for="caloriesgoal">Calories Burned Goal:</label>
+                            <input type="number" id="caloriesgoal" name="caloriesgoal" required>
+                        </li>
+                        <li>
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </li>
+                    </ul>
+                    <button type="submit">Add Workout</button>
+                </form>
+                <!-- Workout data display table -->
+                <table id="workoutTable">
+                    <thead>
+                        <tr>
+                            <th>Workout Type</th>
+                            <th>Duration (minutes)</th>
+                            <th>Calories Burned</th>
+                            <th>Calories Burned Goal</th>
+                            <th>Date</th>
+                            <th>Favourite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows to be added dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

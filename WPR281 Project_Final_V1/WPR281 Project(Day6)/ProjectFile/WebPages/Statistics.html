@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Athleticism - Statistics</title>
+    <link rel="stylesheet" href="Project.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" href="Images/Fav-true.png">
+    <script src="Statistics.js" defer></script>
+    <script src="MockUser.js"></script>
+</head>
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="Home.html">
+                        <img src="Images/Logo-true.png" width="100px" >
+                     </a>
+                </div>
+                <nav>
+                    <a href="Home.html">Home</a>
+                    <a href="LogWorkouts/Log Workouts.html">Log Workouts</a>
+                    <a href="Statistics.html">Workout Statistics</a>
+                    <a href="Goals.html">View Goals</a>
+                    <a href="Achievements.html">Achievements</a>
+                    <a href="login/Login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner-area">
+            <h2>Your Workout Statistics</h2>
+        </div>
+        <div class="content-area">
+            <div class="wrapper">
+                <div class="stats-container">
+                    <div class="stats-summary">
+                        <h3>Overall Statistics</h3>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <h4>Total Workouts</h4>
+                                <p id="totalWorkouts">0</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>Total Calories Burned</h4>
+                                <p id="totalCalories">0</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>Average Duration</h4>
+                                <p id="avgDuration">0 min</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>Most Common Workout</h4>
+                                <p id="commonWorkout">-</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="charts-container">
+                        <div class="chart-box">
+                            <h3>Weekly Progress</h3>
+                            <canvas id="weeklyChart"></canvas>
+                        </div>
+                        <div class="chart-box">
+                            <h3>Workout Distribution</h3>
+                            <canvas id="workoutPieChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="print-container">
+                        <button id="printSummaryBtn" class="print-btn">Print Summary</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

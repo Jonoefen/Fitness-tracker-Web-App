@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Athleticism - Achievements</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="icon" type="image/png" href="Images/Fav-true.png">
+    <script src="MockUser.js"></script>
+    <script src="Achievements.js"></script>
+    <script src="AchievementHandler.js" defer></script>
+</head>
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="Home.html">
+                        <img src="Images/Logo-true.png" width="100px" >
+                     </a>
+                </div>
+                <nav>
+                    <a href="Home.html">Home</a>
+                    <a href="LogWorkouts/Log Workouts.html">Log Workouts</a>
+                    <a href="Statistics.html">Workout Statistics</a>
+                    <a href="Goals.html">View Goals</a>
+                    <a href="Achievements.html">Achievements</a>
+                    <a href="login/Login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner-area">
+            <h2>Your Fitness Achievements</h2>
+        </div>
+        <div class="content-area">
+            <div class="wrapper">
+                <div class="user-profile">
+                    <h2>Welcome, <span id="userName">User</span>!</h2>
+                    <p>Member since: <span id="userJoined">Date</span></p>
+                    <p>Total achievements: <span id="totalAchievements">0</span> / <span id="maxAchievements">0</span></p>
+                </div>
+                <div class="achievements-container">
+                    <h3>Your Badges</h3>
+                    <div id="achievementsList" class="achievements-grid">
+                        <!-- Achievements will be loaded here dynamically -->
+                    </div>
+                </div>
+                <div class="locked-achievements">
+                    <h3>Locked Achievements</h3>
+                    <div id="lockedAchievements" class="achievements-grid">
+                        <!-- Locked achievements will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Athleticism - Goals</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="icon" type="image/png" href="Images/Fav-true.png">
+    <script src="Goals.js" defer></script>
+    <script src="MockUser.js"></script>
+</head>
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="Home.html">
+                        <img src="Images/Logo-true.png" width="100px" >
+                     </a>
+                </div>
+                <nav>
+                    <a href="Home.html">Home</a>
+                    <a href="LogWorkouts/Log Workouts.html">Log Workouts</a>
+                    <a href="Statistics.html">Workout Statistics</a>
+                    <a href="Goals.html">View Goals</a>
+                    <a href="Achievements.html">Achievements</a>
+                    <a href="login/Login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+
+       
+        <div class="banner-area">
+            <h2>Your Fitness Goals</h2>
+        </div>
+        <div class="content-area">
+            <div class="wrapper">
+                <div class="goals-container">
+                    <div class="set-goal-section">
+                        <h3>Set New Goal</h3>
+                        <form id="goalForm" class="goal-form">
+                            <div class="form-group">
+                                <label for="goalType">Select Goal Type:</label>
+                                <select id="goalType" required class="form-input">
+                                    <option value="">Choose a goal type</option>
+                                    <option value="distance">Distance Goal</option>
+                                    <option value="calories">Calorie Goal</option>
+                                    <option value="workouts">Workout Frequency</option>
+                                </select>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label id="goalAmountLabel" for="goalAmount">Enter amount:</label>
+                                <input type="number" id="goalAmount" class="form-input" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="goalDeadline">Goal Deadline:</label>
+                                <input type="date" id="goalDeadline" class="form-input" required>
+                            </div>
+                    
+                            <button type="submit" class="submit-btn">Set Goal</button>
+                        </form>
+                    </div>
+                    
+                    <div class="goals-display">
+                        <h3>Your Active Goals</h3>
+                        <div id="activeGoals" class="active-goals-container"></div>
+                    </div>
+
+
+                    <div class="motivation-section">
+                        <h3>Stay Motivated</h3>
+                        <button id="motivationBtn">Need some motivation?</button>
+                        <div id="motivationMessage"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
